@@ -1,0 +1,72 @@
+
+@import "settings";
+@import "foundation";
+@import "variables";
+
+body {
+  background-image: url(../images/bg-lg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: $text-color;
+}
+
+h1 {
+  font-family: 'Righteous', cursive;
+  font-size: 5.2em;
+  text-align: center;
+  color: $text-color;
+  margin-top: 1em;
+  margin-bottom: 0em;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  color: $text-color;
+  padding-top: 0em;
+  margin-top: 0em;
+  margin-bottom: 1em;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+a {
+  color: $text-color;
+  &:visited {
+    color: $text-color;
+  }
+  &:active {
+    color: $text-color;
+  }
+  &:hover {
+    color: #ff9853;
+  }
+}
+
+.main {
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.projects {
+  height: 35vh;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+  width:4px;
+}
+
+::-webkit-scrollbar-thumb{
+   background-color: rgba(240,255,255,0.5);
+}
+
+.icons {
+  font-size: 2em;
+}
