@@ -34,6 +34,9 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 1.1em;
+  a {
+    text-decoration: underline;
+  }
 }
 
 a {
@@ -65,8 +68,4 @@ a {
 
 ::-webkit-scrollbar-thumb{
    background-color: rgba(240,255,255,0.5);
-}
-
-.icons {
-  font-size: 2em;
 }
