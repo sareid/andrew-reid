@@ -1,23 +1,19 @@
 <div class="row">
   <div class="small-12 medium-8 medium-centered columns text-center projects">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.!</p>
+    {{#each model as |project|}}
+        <p>
+            <a href="{{project.github_url}}">{{project.title}}</a>: {{project.description}}
+            {{#if project.demo_url}}
+                <a href="{{project.demo_url}}">Demo.</a>
+            {{/if}}
+            {{#if project.blog_url}}
+                <a href="{{project.blog_url}}">Related blog post.</a>
+            {{/if}}
+            {{#if project.github_url_2}}
+                <a href="{{project.github_url_2}}">API on Github.</a>
+            {{/if}}
+        </p>
+    {{/each}}
   </div>
 </div>
 <div class="row">
