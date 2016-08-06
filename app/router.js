@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('projects', function(){
     this.route('new');
   });
+  this.route('login');
 });
 
 export default Router;
