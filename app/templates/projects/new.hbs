@@ -1,13 +1,15 @@
 <div class="row">
   <div class="small-12 medium-6 medium-centered columns text-center">
-    <div class="new-proj-form">
-      {{input type="text" placeholder="Project Title" value=title}}
-      {{input type="text" placeholder="Main Github URL" value=github_url}}
-      {{input type="text" placeholder="Secondary Github URL (e.g. for API)" value=github_url_2}}
-      {{input type="text" placeholder="Demo URL" value=demo_url}}
-      {{input type="text" placeholder="Blog URL" value=blog_url}}
-      {{textarea type="text" placeholder="Description" value=description rows="6"}}
-      <button {{action 'addProject'}} class="submit">Submit</button>
-    </div>
+    {{#if session.isAuthenticated}}
+      <div class="new-proj-form">
+        {{input type="text" placeholder="Project Title" value=title}}
+        {{input type="text" placeholder="Main Github URL" value=github_url}}
+        {{input type="text" placeholder="Secondary Github URL (e.g. for API)" value=github_url_2}}
+        {{input type="text" placeholder="Demo URL" value=demo_url}}
+        {{input type="text" placeholder="Blog URL" value=blog_url}}
+        {{textarea type="text" placeholder="Description" value=description rows="6"}}
+        <button {{action 'addProject'}} class="submit">Submit</button>
+      </div>
+    {{/if}}
   </div>
 </div>

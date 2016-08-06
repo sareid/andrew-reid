@@ -22,6 +22,9 @@ module.exports = function(environment) {
       authDomain: 'andrew-reid-657db.firebaseapp.com',
       databaseURL: 'https://andrew-reid-657db.firebaseio.com',
       storageBucket: 'andrew-reid-657db.appspot.com',
+    },
+    torii: {
+      sessionServiceName: 'session'
     }
 
   };
