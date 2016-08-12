@@ -19,8 +19,14 @@ body {
 }
 
 h1 {
+  font-size: 3.5em;
+  @media #{$medium-only} {
+    font-size: 4.5em;
+  }
+  @media #{$large-up} {
+    font-size: 5.5em;
+  }
   font-family: 'Righteous', cursive;
-  font-size: 5.5em;
   text-align: center;
   color: $text-color;
   margin-top: 0.8em;
@@ -28,7 +34,13 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
+  @media #{$medium-only} {
+    font-size: 1.8em;
+  }
+  @media #{$large-up} {
+    font-size: 2em;
+  }
   font-family: 'Righteous', cursive;
   text-align: center;
   color: rgba($subheading-color, 0.5);
