@@ -4,7 +4,14 @@
 @import "variables";
 
 body {
-  background-image: url(../images/bg-lg.jpg);
+  // background-image: url(../images/bg-lg.jpg);
+  background-image: url(../images/bg-sm.jpg);
+  @media #{$medium-only} {
+    background-image: url(../images/bg-md.jpg);
+  }
+  @media #{$large-up} {
+    background-image: url(../images/bg-lg.jpg);
+  }
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -13,7 +20,7 @@ body {
 
 h1 {
   font-family: 'Righteous', cursive;
-  font-size: 4.7em;
+  font-size: 5.5em;
   text-align: center;
   color: $text-color;
   margin-top: 0.8em;
@@ -21,13 +28,26 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
-  font-family: 'Poiret One', cursive;
+  font-size: 2em;
+  font-family: 'Righteous', cursive;
   text-align: center;
-  color: $text-color;
+  color: rgba($subheading-color, 0.5);
   padding-top: 0em;
   margin-top: 0em;
   margin-bottom: 1em;
+}
+
+a {
+  color: rgba($subheading-color, 0.6);
+  &.active {
+    color: rgba($subheading-color, 0.6);
+  }
+  &:hover {
+    color: rgba($subheading-color, 0.6);
+  }
+  &:visited {
+    color: rgba($subheading-color, 0.6);
+  }
 }
 
 p {
@@ -35,22 +55,13 @@ p {
   font-weight: 300;
   font-size: 1em;
   a {
-    text-decoration: underline;
+    color: $subheading-color;
+    &:hover {
+      color: #ff9853;
+    }
   }
 }
 
-a {
-  color: $text-color;
-  &:visited {
-    color: $text-color;
-  }
-  &:active {
-    color: $text-color;
-  }
-  &:hover {
-    color: #ff9853;
-  }
-}
 
 .main {
   margin: 0 auto;
@@ -58,7 +69,7 @@ a {
 }
 
 .projects {
-  height: 33vh;
+  height: 40vh;
   overflow-y: scroll;
 }
 
@@ -67,5 +78,23 @@ a {
 }
 
 ::-webkit-scrollbar-thumb{
-   background-color: rgba(240,255,255,0.5);
+   background-color: rgba(255,255,255,0);
+}
+
+.sub-heading {
+  &:hover {
+    background-image: url(../images/link-bg2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.clipped {
+  background: url(../images/title-bg.png);
+  background-size: contain;
+  color: #fff;
+  text-align: center;
+  /* -webkit-background-clip clips the background of the element to the text */
+  -webkit-text-fill-color: transparent; /* overrides the white text color in webkit browsers */
+  -webkit-background-clip: text;
 }
