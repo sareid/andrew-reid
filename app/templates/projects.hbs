@@ -1,23 +1,22 @@
-<div class="row">
-  <div class="small-12 medium-8 medium-centered columns text-center projects">
-    {{#each model as |project|}}
-        <p>
-            <a href="{{project.github_url}}" target="_blank">{{project.title}}</a>: {{project.description}}
-            {{#if project.demo_url}}
-                <a href="{{project.demo_url}}" target="_blank">Demo.</a>
-            {{/if}}
-            {{#if project.blog_url}}
-                <a href="{{project.blog_url}}" target="_blank">Related blog post.</a>
-            {{/if}}
-            {{#if project.github_url_2}}
-                <a href="{{project.github_url_2}}" target="_blank">API on Github.</a>
-            {{/if}}
-        </p>
-    {{/each}}
-  </div>
+<div class="projects">
+  {{#each model as |project|}}
+    <p>
+      <a href="{{project.github_url}}" target="_blank">{{project.title}}</a>: {{project.description}}
+      {{#if project.demo_url}}
+          <a href="{{project.demo_url}}" target="_blank">Demo.</a>
+      {{/if}}
+      {{#if project.blog_url}}
+          <a href="{{project.blog_url}}" target="_blank">Related blog post.</a>
+      {{/if}}
+      {{#if project.github_url_2}}
+          <a href="{{project.github_url_2}}" target="_blank">API on Github.</a>
+      {{/if}}
+    </p>
+  {{/each}}
 </div>
 <div class="row">
   <div class="small-12 medium-8 medium-centered columns text-center">
+    <br>
     <h2>⇩</h2>
   </div>
 </div>

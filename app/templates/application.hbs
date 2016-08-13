@@ -1,28 +1,29 @@
 <div class="main">
-  <div class="row">
-    <h1> {{link-to "Andrew Reid" "index"}}</h1>
+  <div class="row clipped">
+    <h1> {{link-to "ANDREW REID" "index"}}</h1>
   </div>
   <div class="row">
-    <div class="row">
-      <div class="small-12 medium-6 medium-centered columns text-center">
-        <div class="row">
-          <div class="small-3 columns">
-            <h2>{{link-to "About" "about"}}</h2>
-          </div>
-          <div class="small-3 columns">
-            <h2>{{link-to "Projects" "projects"}}</h2>
-          </div>
-          <div class="small-3 columns">
-            <h2>{{link-to "Contact" "contact"}}</h2>
-          </div>
-          <div class="small-3 columns">
-            <h2><a href="http://sareid.github.io/" target="_blank">Blog</a></h2>
-          </div>
+    <div class="small-11 medium-8 large-7 small-centered columns text-center">
+      <div class="row">
+        <div class="small-3 columns sub-heading">
+          <h2>{{link-to "About" "about"}}</h2>
+        </div>
+        <div class="small-3 columns sub-heading">
+          <h2>{{link-to "Projects" "projects"}}</h2>
+        </div>
+        <div class="small-3 columns sub-heading">
+          <h2>{{link-to "Contact" "contact"}}</h2>
+        </div>
+        <div class="small-3 columns sub-heading">
+          <h2><a href="http://sareid.github.io/" target="_blank">Blog</a></h2>
         </div>
       </div>
     </div>
   </div>
-  <br>
-  {{outlet}}
+  <div class="row">
+    <div class="small-11 medium-8 small-centered columns text-center">
+      {{outlet}}
+    </div>
+  </div>
 </div>
 
