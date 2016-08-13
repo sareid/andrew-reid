@@ -20,6 +20,7 @@ body {
 
 h1 {
   font-size: 3.5em;
+  line-height: 80%;
   font-family: 'Righteous', cursive;
   text-align: center;
   color: $text-color;
@@ -27,14 +28,16 @@ h1 {
   margin-bottom: 0em;
   @media #{$medium-only} {
     font-size: 4.5em;
+    line-height: 100%;
   }
   @media #{$large-up} {
     font-size: 5.5em;
+    line-height: 100%;
   }
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   @media #{$medium-only} {
     font-size: 1.8em;
   }
@@ -101,7 +104,11 @@ p {
 }
 
 .clipped {
-  background: url(../images/title-bg.png);
+  background: url(../images/title-bg-sm.png);
+  @media #{$medium-up} {
+    background: url(../images/title-bg.png);
+    -webkit-background-clip: text;
+  }
   background-size: contain;
   color: #fff;
   text-align: center;
