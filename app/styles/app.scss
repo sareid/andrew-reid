@@ -104,9 +104,9 @@ p {
 }
 
 .clipped {
-  background: url(../images/title-bg-sm.png);
+  background: url(../images/title-bg-sm.jpg);
   @media #{$medium-up} {
-    background: url(../images/title-bg.png);
+    background: url(../images/title-bg.jpg);
     -webkit-background-clip: text;
   }
   background-size: contain;
