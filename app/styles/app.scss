@@ -19,36 +19,36 @@ body {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 3.9em;
   line-height: 85%;
-  font-family: 'Righteous', cursive;
+  font-family: 'Dancing Script', cursive;
   text-align: center;
   color: $text-color;
   margin-top: 0.8em;
   margin-bottom: 0em;
   @media #{$medium-only} {
-    font-size: 4.5em;
+    font-size: 5.5em;
     line-height: 100%;
   }
   @media #{$large-up} {
-    font-size: 5.5em;
+    font-size: 6.5em;
     line-height: 100%;
   }
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1em;
   @media #{$medium-only} {
-    font-size: 1.8em;
+    font-size: 1.3em;
   }
   @media #{$large-up} {
-    font-size: 2em;
+    font-size: 1.5em;
   }
-  font-family: 'Righteous', cursive;
+  font-family: 'EB Garamond', serif;
   text-align: center;
   color: rgba($subheading-color, 0.5);
-  padding-top: 0em;
-  margin-top: 0em;
+  padding-top: 0.5em;
+  margin-top: 0.2em;
   margin-bottom: 1em;
 }
 
@@ -66,9 +66,9 @@ a {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'EB Garamond', serif;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 1.1em;
   a {
     color: $subheading-color;
     &:hover {
@@ -83,7 +83,10 @@ p {
 }
 
 .projects {
-  height: 44vh;
+  height: 45vh;
+  @media #{$small-only} {
+    height: 55vh;
+  }
   overflow-y: scroll;
 }
 
@@ -116,3 +119,6 @@ p {
   -webkit-text-fill-color: transparent; /* overrides the white text color in webkit browsers */
   -webkit-background-clip: text;
 }
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.02); }
