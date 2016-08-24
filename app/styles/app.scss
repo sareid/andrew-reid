@@ -58,6 +58,12 @@ h2 {
 .contact-icons {
   padding-top: 0.5em;
   font-size: 3.4em;
+  a {
+    color: rgba($subheading-color, 0.6);
+    &:hover {
+      color: rgba(#ff9853, 0.6);
+    }
+  }
 }
 
 a {
