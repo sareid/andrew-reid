@@ -21,7 +21,6 @@ body {
 h1 {
   font-size: 3.4em;
   line-height: 85%;
-  // font-family: 'Dancing Script', cursive;
   font-family: 'Pacifico', cursive;
   text-align: center;
   color: $text-color;
@@ -42,18 +41,23 @@ h1 {
 h2 {
   font-size: 1em;
   @media #{$medium-only} {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
   @media #{$large-up} {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   // font-family: 'EB Garamond', serif;
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   color: rgba($subheading-color, 0.5);
   padding-top: 0.5em;
   margin-top: 0.2em;
   margin-bottom: 1em;
+}
+
+.contact-icons {
+  padding-top: 0.5em;
+  font-size: 3.4em;
 }
 
 a {
@@ -70,10 +74,9 @@ a {
 }
 
 p {
-  // font-family: 'EB Garamond', serif;
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 0.9em;
   a {
     color: $subheading-color;
     &:hover {
@@ -120,7 +123,6 @@ p {
   background-size: contain;
   color: #fff;
   text-align: center;
-  /* -webkit-background-clip clips the background of the element to the text */
-  -webkit-text-fill-color: transparent; /* overrides the white text color in webkit browsers */
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
